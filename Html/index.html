@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle</title>
+    <link href="../Style/index.css" rel="stylesheet">
+    </link>
+
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header id="header">
+        <div>Rectangle drawing </div>
+    </header>
+    <!-- end  header  -->
+
+    <div class="container">
+        <section class="left">
+            <div>
+                <label id="widthLabel" for="width"> width</label>
+                <input id="widthInput" name="width" value="0" oninput="draw(this.value , 'width' )" />
+                <div id="widthValid"> The width value must be lower than or equal 700 </div>
+            </div>
+            <div>
+                <label id ="heightLabel" for="height"> height</label>
+                <input id="heightInput" name="height" value="0" oninput="draw(this.value , 'height')" />
+                <div id="heightValid"> The height value must be lower than or equal 400 </div>
+            </div>
+        </section>
+
+        <section class="right">
+            <canvas id="rectangle" width="700" height="400"></canvas>
+        </section>
+
+    </div>
+    <script src="../Js/index.js"> </script>
+</body>
+
+</html>
